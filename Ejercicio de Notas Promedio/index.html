@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Promedio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div>
+  <h2>Información del Usuario</h2>
+  <p id="nombreUsuario">Nombre: <span id="nombre"></span></p>
+  <p id="carreraUsuario">Carrera: <span id="carrera"></span></p>
+</div>
+
+<h2>Notas Finales</h2> 
+
+
+
+<form id="formularioPromedio">
+  <label for="nombreRamo">Nombre Ramo:</label>
+  <input type="text" id="nombreRamo" required><br>
+
+  <label for="area">Sección o Módulo:</label>
+  <input type="text" id="area" required><br>
+
+  <label for="nota">Nota:</label>
+  <input type="number" id="nota" min="1.0" max="7.0" step="0.1" required><br>
+<br>
+  <button type="button" onclick="agregarNota()">Agregar Nota</button>
+</form>
+<br>
+
+<table border ="1" id="tablaNotas" cellpadding="0" cellspacing="0" width="75%"> 
+
+  <tr>
+    <th>Nombre Ramo</th>
+    <th>Sección o Módulo</th>
+    <th>Nota </th>
+  </tr>
+</table>
+
+<p id="promedioTexto">Promedio: <span id="promedio"></span></p>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
